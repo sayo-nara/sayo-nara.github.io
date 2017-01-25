@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>links - sayōnara</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link href="./css/bulma.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+    <style type="text/css">
+
+        a {
+            color: #000;
+            font-weight: 200;
+        }
+        a:hover span {
+            display:none;
+        }
+        #about:hover:after {
+            content:"就いて";
+        }
+        #anime:hover:after {
+            content:"アニメ";
+        }
+        #blog:hover:after {
+            content:"ブログ";
+        }
+        #overwatch:hover:after {
+            content:"オーバーウォッチ";
+        }
+        #spotify:hover:after {
+            content:"スポティファイ";
+        }
+        #steam:hover:after {
+            content:"スティーム";
+        }
+        #twitch:hover:after {
+            content:"ツイッチ";
+        }
+        #twitter:hover:after {
+            content:"ツイッター";
+        }
+        #youtube:hover:after {
+            content:"ユーチューブ";
+        }
+    </style>
+    <script type="text/javascript">
+        function openModal()
+        {
+            document.getElementById("about-modal").className += " is-active";
+        }
+        function closeModal()
+        {
+            document.getElementById("about-modal").className = "modal";
+        }
+    </script>
+</head>
+<body>
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="columns">
+                    <div class="column is-unselectable">
+                        <!-- <a id="about" href="about.html"> -->
+                         <a id="about" onclick="openModal()"><span>about</span></a>
+                    </div>
+                    <div class="column is-unselectable">
+                        <a href="https://myanimelist.net/animelist/sayo_nara" id="anime"><span>anime</span></a>
+                    </div>
+                    <div class="column is-unselectable">
+                        <a href="https://sayou-nara.tumblr.com/" id="blog"><span>blog</span></a>
+                    </div>
+                    <div class="column is-unselectable">
+                        <a href="http://masteroverwatch.com/profile/pc/us/sayounara-11790" id="overwatch"><span>overwatch</span></a>
+                    </div>
+                    <div class="column is-unselectable">
+                        <a href="http://steamcommunity.com/profiles/76561198039505974" id="steam"><span>steam</span></a>
+                    </div>
+                    <div class="column is-unselectable">
+                        <a href="https://www.twitch.tv/sayounara_" id="twitch"><span>twitch</span></a>
+                    </div>
+                    <div class="column is-unselectable">
+                        <a href="https://twitter.com/sa_younara" id="twitter"><span>twitter</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="about-modal">
+            <div class="modal-background" ></div>
+            <div class="modal-content">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img alt="Image" src="./img/about_header.jpg">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image" style="height: 50px; width: 50px;">
+                                    <img alt="Image" src="./img/about_small.png">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">sayōnara</p>
+                                <p class="subtitle is-6">about</p>
+                            </div>
+                        </div>
+                        <div class="content" style="text-align: justify;">
+                            <p>Annyeong! My name is Andy, I go by sayounara on the internet.</p>
+                            <p>This is my website, right now it's still a work in progress. In the future, I plan to have a blog that I'll periodically update with posts about video games, anime, and other nerd shit.</p>
+                            <p>If you ever need to get in contact with me, the best way would be to add me on steam and leave a comment on my profile saying that you need to talk to me.</p>
+                        </div>
+                    </div>
+                </div><button class="modal-close" onclick="closeModal()"></button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
