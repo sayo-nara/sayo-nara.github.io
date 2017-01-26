@@ -9,138 +9,124 @@
     <link href="./css/bulma.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
-    <style type="text/css">
-
-    </style>
-    <script type="text/javascript">
-        function openMobileMenu() {
-          if (document.getElementById("mobile-nav-t").className == "nav-toggle") {
-            document.getElementById("mobile-nav-t").className = "nav-toggle is-active";
-            document.getElementById("mobile-nav-m").className = "nav-right nav-menu is-active";
-          }
-          else {
-            document.getElementById("mobile-nav-t").className = "nav-toggle";
-            document.getElementById("mobile-nav-m").className = "nav-right nav-menu";
-          }
-        }
-    </script>
 </head>
 <body>
-    <!-- blog post header and nav -->
-    <section class="hero is-large" style="background-image: linear-gradient(rgba(0, 0, 0, 0.40),rgba(0, 0, 0, 0.60)),url(./img/blog_header.jpg);">
-      <!-- Hero header: will stick at the top -->
-      <div class="hero-head">
-        <header class="nav" style="background-color: rgb(255,255,255);" >
-          <div class="container">
-            <div class="nav-left">
-              <a class="nav-item" href="https://sayo-nara.github.io/">
-                さようなら
-              </a>
-            </div>
-            <span id="mobile-nav-t" class="nav-toggle" onclick="openMobileMenu()">
-              <span></span>
-              <span></span>
-              <span></span>
+  <div class="columns is-fullheight">
+    <div class="column left-side is-half-desktop is-hidden-touch">
+      <section class="hero is-fullheight is-default is-bold">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+          <div class="title is-1">Weeb Blog</div>
+            <div class="title is-5">A blog about anime and games</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="column right-side is-half-desktop is-full-mobile">
+      <nav class="nav is-hidden-tablet">
+        <div class="nav-left">
+          <a class="nav-item is-brand" href="#">
+            <img src="../images/bulma.png" alt="Bulma logo">
+          </a>
+        </div>
+
+        <div class="nav-center">
+          <a class="nav-item" href="#">
+            <span class="icon">
+              <i class="fa fa-github"></i>
             </span>
-            <div id="mobile-nav-m" class="nav-right nav-menu">
-              <a class="nav-item" href="https://sayo-nara.github.io/">
-                Home
-              </a>
-              <a class="nav-item"  href="https://sayo-nara.github.io/main">
-                Main
-              </a>
-              <a class="nav-item" href="https://sayo-nara.github.io/other">
-                Other
-              </a>
+          </a>
+          <a class="nav-item" href="#">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+        </div>
+
+        <span class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+
+        <div class="nav-right nav-menu">
+          <a class="nav-item" href="#">
+            Home
+          </a>
+          <a class="nav-item" href="#">
+            Documentation
+          </a>
+          <a class="nav-item" href="#">
+            Blog
+          </a>
+
+          <span class="nav-item">
+            <a class="button" >
+              <span class="icon">
+                <i class="fa fa-twitter"></i>
+              </span>
+              <span>Tweet</span>
+            </a>
+            <a class="button is-primary" href="#">
+              <span class="icon">
+                <i class="fa fa-download"></i>
+              </span>
+              <span>Download</span>
+            </a>
+          </span>
+        </div>
+      </nav>
+      <section class="hero is-fullheight is-default is-bold">
+        <div class="hero-body">
+          <div class="container">
+            <div class="column is-full-desktop">
+              <h1 class="blog-timestamp">
+                2 days ago
+              </h1>
+              <h1 class="blog-title">
+                Cras feugiat euismod sem accumsan ultrices.
+              </h1>
+              <h2 class="blog-summary">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare malesuada dolor ut dictum. Pellentesque eget orci nisl. Vivamus sit amet ullamcorper elit. Donec mattis scelerisque dui sed convallis.
+              </h2>
             </div>
+            <div class="column is-full-desktop">
+              <h1 class="blog-timestamp">
+                about a week agoooooooooooo
+              </h1>
+              <h1 class="blog-title">
+                Praesent dignissim vestibulum ex
+              </h1>
+              <h2 class="blog-summary">
+               Fusce sagittis ultrices ipsum quis posuere. Donec ornare, erat eget sollicitudin sagittis, lacus augue consectetur lorem, at pretium mauris ligula quis nisi. Curabitur ligula nisi, elementum at dapibus sit amet, venenatis a libero. Duis libero erat, pellentesque ac arcu ut, ultrices condimentum lacus.
+             </h2>
+           </div>
+           <div class="column is-full-desktop">
+            <h1 class="blog-timestamp">
+              1 million years ago
+            </h1>
+            <h1 class="blog-title">
+              Phasellus aliquam sem libero
+            </h1>
+            <h2 class="blog-summary">
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla sit amet facilisis purus, quis ullamcorper eros. Duis aliquam dignissim ipsum, malesuada commodo justo. Aliquam finibus vel massa non pharetra. Cras congue luctus pulvinar.
+            </h2>
           </div>
-        </header>
-      </div>
-
-      <!-- Hero content: will be in the middle -->
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title" style="color:rgba(245,245,245,1);">
-            0 to 5000
-          </h1>
-          <h2 class="subtitle" style="color:rgba(245,245,245,0.9);">
-            How to Improve in Overwatch
-          </h2>
         </div>
       </div>
 
-      <!-- Hero footer: will stick at the bottom -->
       <div class="hero-foot">
-      </div>
-    </section>
-
-    <!-- blog post content -->
-    <section>
-      <br>
-      <div class="container">
-        <div class="content">
-          <h1>Annyeong!</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
-          <h1>Second level</h1>
-          <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
-          <ul>
-            <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
-            <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
-            <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
-            <li>Ut non enim metus.</li>
-          </ul>
-          <blockquote>Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet turpis.</blockquote>
-          <p>Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et <em>justo sodales</em> elementum. Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.</p>
-          <p>Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum interdum commodo.</p>
-          <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p>
-          <table>
-            <thead>
-              <tr>
-                <th>Hero</th>
-                <th>Primary Attack Damage</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>McCree</td>
-                <td>Four</td>
-              </tr>
-              <tr>
-                <td>Soldier 76</td>
-                <td>Six</td>
-              </tr>
-              <tr>
-                <td>D.va</td>
-                <td>Eight</td>
-              </tr>
-              <tr>
-                <td>Roadhog</td>
-                <td>Ten</td>
-              </tr>
-              <tr>
-                <td>Ana</td>
-                <td>Twelve</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <br>
-    </section>
-
-    <!-- footer -->
-    <section>
-      <footer class="footer">
         <div class="container">
-          <div class="content has-text-centered">
-            <br>
-            <p>
-              <a href="https://sayo-nara.github.io/legal">
-                COPYRIGHT　-　FROM 2017 TIL 3017　-　©w©
-              </a>
-            </p>
+          <div class="tabs is-centered">
+            <ul>
+              <li><a href="#">View more posts</a></li>
+            </ul>
           </div>
         </div>
-      </footer>
+      </div>
     </section>
+  </div>
+</div>
+<!-- <script async type="text/javascript" src="../js/bulma.js"></script> -->
 </body>
 </html>
