@@ -47,6 +47,18 @@
           line-height: 1.5;
         }
     </style>
+    <script type="text/javascript">
+        function openMobileMenu() {
+          if (document.getElementById("mobile-nav-t").className == "nav-toggle") {
+            document.getElementById("mobile-nav-t").className = "nav-toggle is-active";
+            document.getElementById("mobile-nav-m").className = "nav-right nav-menu is-active";
+          }
+          else {
+            document.getElementById("mobile-nav-t").className = "nav-toggle";
+            document.getElementById("mobile-nav-m").className = "nav-right nav-menu";
+          }
+        }
+    </script>
 </head>
 <body>
   <div class="columns is-fullheight">
@@ -61,59 +73,31 @@
       </section>
     </div>
     <div class="column right-side is-half-desktop is-full-mobile">
-      <nav class="nav is-hidden-tablet">
-        <div class="nav-left">
-          <a class="nav-item is-brand" href="#">
-            <img src="../images/bulma.png" alt="Bulma logo">
-          </a>
-        </div>
-
-        <div class="nav-center">
-          <a class="nav-item" href="#">
-            <span class="icon">
-              <i class="fa fa-github"></i>
+      <header class="nav" style="background-color: rgb(255,255,255);" >
+          <div class="container">
+            <div class="nav-left">
+              <a class="nav-item" href="https://sayo-nara.github.io/">
+                さようなら
+              </a>
+            </div>
+            <span id="mobile-nav-t" class="nav-toggle" onclick="openMobileMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
             </span>
-          </a>
-          <a class="nav-item" href="#">
-            <span class="icon">
-              <i class="fa fa-twitter"></i>
-            </span>
-          </a>
-        </div>
-
-        <span class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-
-        <div class="nav-right nav-menu">
-          <a class="nav-item" href="#">
-            Home
-          </a>
-          <a class="nav-item" href="#">
-            Documentation
-          </a>
-          <a class="nav-item" href="#">
-            Blog
-          </a>
-
-          <span class="nav-item">
-            <a class="button" >
-              <span class="icon">
-                <i class="fa fa-twitter"></i>
-              </span>
-              <span>Tweet</span>
-            </a>
-            <a class="button is-primary" href="#">
-              <span class="icon">
-                <i class="fa fa-download"></i>
-              </span>
-              <span>Download</span>
-            </a>
-          </span>
-        </div>
-      </nav>
+            <div id="mobile-nav-m" class="nav-right nav-menu">
+              <a class="nav-item" href="https://sayo-nara.github.io/">
+                Home
+              </a>
+              <a class="nav-item"  href="https://sayo-nara.github.io/main">
+                Main
+              </a>
+              <a class="nav-item" href="https://sayo-nara.github.io/other">
+                Other
+              </a>
+            </div>
+          </div>
+        </header>
       <section class="hero is-fullheight is-default is-bold">
         <div class="hero-body">
           <div class="container">
