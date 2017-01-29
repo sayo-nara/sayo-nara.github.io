@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>blog - sayōnara</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link href="./css/bulma.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+    <style type="text/css">
+        .left-side .hero-body {
+          background-color: #999;
+          background-image: url(./img/blog_header.jpg);
+          -ms-background-position-x: center;
+          -ms-background-position-y: bottom;
+          background-position: center bottom;
+          background-size: cover;
+        }
+
+        .left-side .hero-body .title {
+          color: #fff;
+          font-weight: lighter;
+        }
+
+        .right-side .hero-body .container {
+          padding: 40px 30px;
+        }
+
+        .right-side .hero-body .container .column {
+          padding: 40px 30px;
+        }
+
+        .right-side .hero-body .blog-timestamp {
+          font-weight: bold;
+        }
+
+        .right-side .hero-body .blog-title {
+          font-size: 30px;
+          font-weight: bold;
+        }
+
+        .right-side .hero-body .blog-summary {
+          font-size: 18px;
+          font-weight:lighter;
+          line-height: 1.5;
+        }
+    </style>
+    <script type="text/javascript">
+        function openMobileMenu() {
+          if (document.getElementById("mobile-nav-t").className == "nav-toggle") {
+            document.getElementById("mobile-nav-t").className = "nav-toggle is-active";
+            document.getElementById("mobile-nav-m").className = "nav-right nav-menu is-active";
+          }
+          else {
+            document.getElementById("mobile-nav-t").className = "nav-toggle";
+            document.getElementById("mobile-nav-m").className = "nav-right nav-menu";
+          }
+        }
+    </script>
+</head>
+<body>
+  <div class="columns is-fullheight">
+    <div class="column left-side is-half-desktop is-hidden-touch">
+      <section class="hero is-fullheight is-default is-bold">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+          <div class="title is-1">sayōnara</div>
+            <div class="title is-5">A blog about anime and games - WiP</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="column right-side is-half-desktop is-full-mobile">
+      <header class="nav" style="background-color: rgb(255,255,255);" >
+          <div class="container">
+            <div class="nav-left">
+              <a class="nav-item" href="https://sayo-nara.github.io/">
+                さようなら
+              </a>
+            </div>
+            <span id="mobile-nav-t" class="nav-toggle" onclick="openMobileMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <div id="mobile-nav-m" class="nav-right nav-menu">
+              <a class="nav-item" href="https://sayo-nara.github.io/">
+                Home
+              </a>
+              <a class="nav-item"  href="https://sayo-nara.github.io/main">
+                Main
+              </a>
+              <a class="nav-item" href="https://sayo-nara.github.io/other">
+                Other
+              </a>
+            </div>
+          </div>
+        </header>
+      <section class="hero is-fullheight is-default is-bold">
+        <div class="hero-body">
+          <div class="container">
+            <div class="column is-full-desktop">
+              <h1 class="blog-timestamp">
+                2 days ago
+              </h1>
+              <h1 class="blog-title">
+                0 to 5000
+              </h1>
+              <h2 class="blog-summary">
+                How to Improve in Overwatch
+                <br>
+                <a href="https://sayo-nara.github.io/blogentry">read more</a>
+              </h2>
+            </div>
+            <div class="column is-full-desktop">
+              <h1 class="blog-timestamp">
+                about a week agoooooooooooo
+              </h1>
+              <h1 class="blog-title">
+                Praesent dignissim vestibulum ex
+              </h1>
+              <h2 class="blog-summary">
+               Fusce sagittis ultrices ipsum quis posuere. Donec ornare, erat eget sollicitudin sagittis, lacus augue consectetur lorem, at pretium mauris ligula quis nisi. Curabitur ligula nisi, elementum at dapibus sit amet, venenatis a libero. Duis libero erat, pellentesque ac arcu ut, ultrices condimentum lacus.
+             </h2>
+           </div>
+           <div class="column is-full-desktop">
+            <h1 class="blog-timestamp">
+              1 million years ago
+            </h1>
+            <h1 class="blog-title">
+              Phasellus aliquam sem libero
+            </h1>
+            <h2 class="blog-summary">
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla sit amet facilisis purus, quis ullamcorper eros. Duis aliquam dignissim ipsum, malesuada commodo justo. Aliquam finibus vel massa non pharetra. Cras congue luctus pulvinar.
+            </h2>
+          </div>
+        </div>
+      </div>
+
+<!--       <div class="hero-foot">
+        <div class="container">
+          <div class="tabs is-centered">
+            <ul>
+              <li><a href="#">View more posts</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+    </section>
+  </div>
+</div>
+<!-- <script async type="text/javascript" src="../js/bulma.js"></script> -->
+</body>
+</html>
